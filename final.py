@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import streamlit as st
+
+backgroundColor = "4EE0F4"
 
 # Set tema aplikasi
 st.set_page_config(
