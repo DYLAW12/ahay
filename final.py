@@ -441,28 +441,6 @@ if st.button('Hitung Kalori'):
         # Menampilkan pesan error jika input berat tidak valid
         st.error("Masukkan berat dalam bentuk angka.")
 
-# Tambahkan opsi kustomisasi warna pada sidebar
-st.sidebar.subheader("Pilih Warna Tema:")
-warna_latar = st.sidebar.color_picker("Warna Latar", "#ffffff")
-warna_teks = st.sidebar.color_picker("Warna Teks", "#000000")
-warna_tombol = st.sidebar.color_picker("Warna Tombol", "#5c88da")
-
-# Terapkan perubahan warna pada elemen-elemen aplikasi
-st.markdown(
-    f"""
-    <style>
-    body {{
-        background-color: {warna_latar};
-        color: {warna_teks};
-    }}
-    .stButton>button {{
-        background-color: {warna_tombol};
-        color: {warna_latar};
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Tambahkan rekomendasi buah berdasarkan jumlah kalori yang dipilih
 st.sidebar.title('Rekomendasi Buah Berdasarkan Kalori')
